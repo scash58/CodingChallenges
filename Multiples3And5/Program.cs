@@ -1,39 +1,25 @@
-﻿using System;
+﻿using Multiples3And5;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Multiples3And5
+namespace CodingChallenges
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int num = 1;
-            int sum = 0;
+            
+            ChallengesWarehouse.Multiples3And5();
 
-            while (num < 1000)
-            {
-                //check if num is divisable by 3 and adds it to the sum
-                if(num % 3 == 0)
-                {
-                    //Console.WriteLine(num);
-                    sum += num;
-                }
+            ChallengesWarehouse.FibonacciEvenSum();
 
-                //checks if num is divisable by 5 and adds it to the sum
-                if (num % 5 == 0)
-                {
-                    //Console.WriteLine(num);
-                    sum += num;
-                }
+            ChallengesWarehouse.TenDigitFibonacci();
 
-                num++;
-            }
-
-            Console.WriteLine($"Sum of all the multiples of 3 or 5 below 1000: {sum:n0}");
-
+            ChallengesWarehouse.LongestCollatz();
         }
+
     }
 }
